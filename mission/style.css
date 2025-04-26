@@ -1,0 +1,46 @@
+.content {
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+header {
+    text-align: center;
+}
+
+#title {
+    font-size: 38px;
+    letter-spacing: 3px;
+}
+
+#sub-title {
+    font-size: 17px;
+    color: #006EB6;
+    letter-spacing: 2px;
+
+}
+
+main {
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.list-title {
+    font-style: italic;
+}
+
+.example-list ol li {
+    padding-bottom:20px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+#logo {
+    width: 150px;
+    height: auto;
+}
