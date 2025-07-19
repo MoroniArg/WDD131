@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap");
+
+:root {
+  --primary-color: #1B98E0;
+  --secondary-color: #59c3c3;
+  --text-dark: #333;
+  --text-light: #ebebeb;
+  --primary-font: Arial, Helvetica, sans-serif;
+  --secondary-font: 'Amatic SC', cursive;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--primary-color);
+    color: var(--text-dark);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+header img {
+    max-width: 20%;
+}
+
+header h1 {
+    font-size: 6rem;
+    font-family: var(--secondary-font);
+}
+
+
+.search-form {
+    display: flex;
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 650px;
+    border: 1px solid var(--text-dark);
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 2rem;
+}
+  
+
+.search-form input {
+    flex-grow: 1;
+    padding: 0.5rem;
+    border: none;
+    font-size: 1rem;
+}
+
+.search-form button {
+    background-color: white;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.search-form button img {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.recipes {
+    margin: 2rem;
+}
+
+.recipe-card {
+    border: 1px solid #999;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: left;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.recipe-card h3 {
+    display: inline-block;
+    border: 1px solid #999;
+    border-radius: 8px;
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 3px;
+    font-size: 1.75rem;
+    margin-top: 0.5rem;
+}
+
+.recipe-card h2 {
+    color: var(--primary-color);
+    font-family: var(--secondary-font);
+    font-size: 2.8rem;
+    margin: 0.5rem 0;
+}
+
+.rating {
+    font-size: 1.2rem;
+    color: #f5a623;
+}
+
+footer {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.social img {
+    width: 75px;
+    height: auto;
+}
+
+
+footer a {
+    font-size: 0.6em;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+

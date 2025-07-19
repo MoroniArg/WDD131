@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes</title>
+    <link rel="stylesheet" href="recipes.css">
+</head>
+<body>
+    <header>
+        <img src="images/recipe-book.png" alt="logo">
+        <h1> Recipe Book</h1>
+        
+    </header>
+    <main>
+        <form class="search-form">
+            <input type="text" placeholder="Find a recipe..." name="search">
+            <button type="submit">
+                <img src="images/search.svg" alt="Search button">
+            </button>
+        </form>
+        <section class="recipes">
+            <article class="recipe-card">
+                <img src="images/apple-crisp.jpg" alt="apple-crisp" class="recipe-image">
+                <h3> dessert</h3>
+                <h2>Apple Crisp</h2>
+
+                <span
+                    class="rating"
+                    role="img"
+                    aria-label="Rating: 4 out of 5 stars"
+                >   
+                    <span aria-hidden="true" class="icon-star">⭐</span>
+                    <span aria-hidden="true" class="icon-star">⭐</span>
+                    <span aria-hidden="true" class="icon-star">⭐</span>
+                    <span aria-hidden="true" class="icon-star">⭐</span>
+                    <span aria-hidden="true" class="icon-star-empty">☆</span>
+                </span>
+            </article>
+        </section>
+
+    </main>
+    <footer>
+        <div class="social">
+	        <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
+	        <a href="#"><img src="images/instagram_icon.svg" alt="instagram icon"></a>
+	        <a href="#"><img src="images/youtube_icon.svg" alt="youtube icon"></a>
+	        <a href="#"><img src="images/pinterest_icon.svg" alt="pinterest icon"></a>
+        </div>
+        <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>
+    </footer>
+    <script src="main.js" type="module"></script>
+</body>
+</html>
