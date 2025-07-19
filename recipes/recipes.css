@@ -127,7 +127,7 @@ footer {
 }
 
 .social img {
-    width: 75px;
+    width: 60px;
     height: auto;
 }
 
@@ -136,6 +136,86 @@ footer a {
     font-size: 0.6em;
     color: var(--primary-color);
     text-decoration: none;
+    padding-bottom: 2rem;
 }
+
+/* At 600px: switch recipe card layout from column to row */
+@media (min-width: 600px) {
+  body {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+    .recipe-card img {
+        max-width: 280px;
+    }
+    .recipe-card {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-height: 280px;
+        justify-content:start;
+    }
+
+    .recipe-card h3 {
+        margin-top: .5rem;
+    }
+
+    .recipe-card h2 {
+        margin-top: -.25rem;
+        margin-bottom: -0.5rem;
+    }
+
+    .recipe-card p {
+        font-size: 15px;
+        width: 41%;
+        padding-top: 0.5rem;
+    }
+  .recipes {
+    margin: 2rem auto;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+}
+/* At 960px: set a max-width for the layout and center it */
+@media (min-width: 960px) {
+  body {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+    .recipe-card img {
+        max-width: 450px;
+    }
+    .recipe-card {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-height: 400px;
+        justify-content:start;
+    }
+    .recipe-card p {
+        font-size: 17px;
+        width: 41%;
+    }
+  .recipes {
+    margin: 2rem auto;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+}
+
+
+
 
 
