@@ -311,53 +311,223 @@ nav a {
     justify-content: space-evenly;
 }
 footer {
-  background-color: #0b4da2;
-  color: #fff;
-  text-align: center;
-  padding: 1.5rem 1rem;
+    background-color: #0b4da2;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 1rem;
 }
 
 .footer-logo {
-  height: 100px;
-  margin-bottom: 0.5rem;
+    height: 100px;
+    margin-bottom: 0.5rem;
 }
 
 .footer-links {
-  margin: 3rem 0;
+    margin: 3rem 0;
 }
 
 .footer-links a {
-  color: #FFCB05; /* Pokémon yellow */
-  text-decoration: none;
-  margin: 0 0.5rem;
+    color: #FFCB05; /* Pokémon yellow */
+    text-decoration: none;
+    margin: 0 0.5rem;
 }
 
 .social-icons {
-  margin-top: 2rem;
+    margin-top: 2rem;
 }
 
 .social-icons img {
-  width: 50px;
-  margin: 0 0.5rem;
-  transition: transform 0.3s ease;
+    width: 50px;
+    margin: 0 0.5rem;
+    transition: transform 0.3s ease;
 }
 
 
-/* Dark Mode Styles */
 body.dark-mode {
-  background-color: #121212;
-  color: #f0f0f0;
+    background-color: #121212;
+    color: #f0f0f0;
 }
 
 body.dark-mode header,
 body.dark-mode footer {
-  background-color: #222;
+    background-color: #222;
 }
 
-body.dark-mode .horizontal-card {
-  background-color: #333;
+body.dark-mode .horizontal-card .community-platforms {
+    background-color: #333;
 }
 
 body.dark-mode a {
-  color: white;
+    color: white;
+}
+
+
+
+
+
+/* Community.html section */
+
+.community-welcome {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+    width: 100vw;
+    max-width: 100%;
+}
+
+.welcome-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 450px;
+    object-fit: cover;
+    filter: brightness(0.5);
+    z-index: 0;
+}
+
+
+.welcome-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    padding: 1rem;
+}
+
+.welcome-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.welcome-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.meetup {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #f8f8f8;
+}
+
+.meetup-text {
+    flex: 1 1 300px;
+    margin-right: 2rem;
+}
+
+.meetup-text h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.meetup-text p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.meetup-map {
+    flex: 1 1 300px;
+}
+
+.meetup-map img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+.community-platforms {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+.platform {
+    flex: 1 1 300px;
+    max-width: 400px;
+    max-height: 400px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.platform img {
+    width: 75px;
+    height: 75px;
+    float: left;
+    margin-right: 1rem;
+    border-radius: 8px;
+}
+
+.platform h3 {
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+.platform p {
+    padding-top: 20px;
+    font-size: 1.75rem;
+    color: #444;
+    clear: both;
+}
+
+
+.player-tips {
+  padding: 2rem;
+  background-color: #f0f8ff;
+}
+
+.tip {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.tip-wide {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.tip-wide h4 {
+    font-size: 30px;
+}
+
+.tip-wide p {
+    font-size: 25px;
+}
+
+.tips-grid {
+  display: flex;
+  gap: 2rem;
+}
+
+.tip-vertical {
+  flex-direction: row;
+  min-width: 250px;
+}
+
+
+.tip-vertical h4 {
+    font-size: 30px;
+}
+
+.tip-vertical p {
+    font-size: 25px;
 }

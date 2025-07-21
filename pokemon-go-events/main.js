@@ -24,9 +24,20 @@ updateCountdown();
 
 // 🌙 Dark Mode Toggle
 const darkModeToggle = document.getElementById("darkModeToggle");
-darkModeToggle.addEventListener("click", () => {
-  document.body.classList.toggle("dark-mode");
-});
+
+if (darkModeToggle) {
+  // Load saved theme preference
+  if (localStorage.getItem("darkMode") === "enabled") {
+    document.body.classList.add("dark-mode");
+  }
+
+  darkModeToggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+    const mode = document.body.classList.contains("dark-mode") ? "enabled" : "disabled";
+    localStorage.setItem("darkMode", mode);
+  });
+}
+
 
 // 👥 Event Attendance Buttons
 const goingBtn = document.querySelector(".going-btn");
