@@ -39,11 +39,16 @@ nav a {
   position: relative;
   height: 400px;
   overflow: hidden;
-  background-image: url("../images/Rexburg-ID.avif");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
+
+.countdown-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
 
 
 
