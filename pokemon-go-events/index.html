@@ -4,13 +4,31 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Pokémon Go Community - Events, Tips, and Meetups in Rexburg, Idaho">
-  <title>Pokémon Go Rexburg Community</title>
+  <link rel="preload" as="image" href="images/Rexburg-ID.avif" />
+  <style>
+    .countdown {
+      position: relative;
+      height: 400px;
+      overflow: hidden;
+    }
+    .countdown-bg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+  </style>
   <link rel="stylesheet" href="styles/style.css" />
+  <title>Pokémon Go Rexburg Community</title>
 </head>
+
 <body>
     <header>
         <div class="header-container">
-            <a href="index.html"><img src="images/Pokemon-Go.png" alt="Pokémon Go Community Logo" class="logo" /></a>
+            <a href="index.html"><img src="images/Pokemon-Go.webp" alt="Pokémon Go Community Logo" class="logo" /></a>
             <nav>
                 <a href="index.html">Home</a>
                 <a href="community.html">Our Community</a>
@@ -21,7 +39,7 @@
 
 
     <section class="countdown">
-        <img src="images/Rexburg-ID.jpg" alt="Rexburg Idaho background" class="countdown-bg" />
+        <img src="images/Rexburg-ID.avif" alt="Rexburg Idaho background" class="countdown-bg" width="1600" height="900" />
         <div class="countdown-overlay">
             <div class="countdown-content">
                 <h1>Next Meetup will be for... Dynamax Latios and Latias!</h1>
@@ -37,13 +55,13 @@
     <section class="next-events">
         <h2>Upcoming Events</h2>
         <div class="events-grid">
-            <div class="event-card" style="background-image: url('images/Virizion.jpg');">
+            <div class="event-card" style="background-image: url('images/Virizion.webp');">
                 <h3>Raid Hour - Virizion</h3>
             </div>
-            <div class="event-card" style="background-image: url('images/Gmax-Butterfree.jpg');">
+            <div class="event-card" style="background-image: url('images/Gmax-Butterfree.webp');">
                 <h3>Gigantamax Butterfree</h3>
             </div>
-            <div class="event-card" style="background-image: url('images/Substitute.jpg');">
+            <div class="event-card" style="background-image: url('images/Substitute.webp');">
                 <h3>Raid Day - Unknown</h3>
             </div>
         </div>
@@ -51,7 +69,7 @@
 
     <section class="tips-section">
         <div class="tips-container">
-            <div class="vertical-card" style="background-image: url('images/Rexburg-1.jpg');"> </div>
+            <div class="vertical-card" style="background-image: url('images/Rexburg-1.webp');"> </div>
         <div class="horizontal-cards">
             <div class="horizontal-card">
                 <h3>Pokémon Go Tips</h3>
@@ -69,7 +87,7 @@
     </div>
 </section>
 
-<section class="community-spotlight" style="background-image: url('images/Event-1.jpg');">
+<section class="community-spotlight" style="background-image: url('images/Event-1.webp');">
   <div class="spotlight-overlay">
     <div class="spotlight-content">
       <h2>Rexburg Trainers Unite!</h2>
@@ -91,7 +109,7 @@
 
 <footer>
   <div class="footer-container">
-    <a href="index.html"><img src="images/Pokemon-Go.png" alt="Pokémon Go Community Logo" class="footer-logo"></a>
+    <a href="index.html"><img src="images/Pokemon-Go.webp" alt="Pokémon Go Community Logo" class="footer-logo"></a>
     <div class="footer-links">
       <a href="site-plan.html">Site Plan</a> |
       <a href="community.html">Community Page</a>
@@ -104,7 +122,8 @@
   </div>
 </footer>
 
-<script src="main.js"></script>
+<script src="main.js" defer></script>
+
 
 
 
