@@ -95,13 +95,15 @@ nav a {
 }
 
 .going-btn {
-    background-color: #4CAF50;
-    color: #fff;
+    background-color: #2e7d32; /* darker green */
+    color: #ffffff;
+    font-weight: bold;
 }
 
 .not-going-btn {
-    background-color: #f44336;
-    color: #fff;
+    background-color: #c62828; /* darker red */
+    color: #ffffff;
+    font-weight: bold;
 }
 
 
